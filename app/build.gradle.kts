@@ -9,6 +9,7 @@
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
+    kotlin("jvm") version "2.2.0"
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
@@ -21,8 +22,7 @@ repositories {
 
 dependencies {
     // This dependency is used by the application.
-    implementation(libs.guava)
-    implementation("com.ghgande:jmodbus:1.2")
+    //implementation(libs.guava)
     implementation("com.ghgande:j2mod:1.2")
 }
 
@@ -45,5 +45,6 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.AppKt"
+    //mainClass = "org.example.AppKt"
+    mainClass.set("org.example.AppKt")
 }
