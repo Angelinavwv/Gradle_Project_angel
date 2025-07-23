@@ -3,10 +3,10 @@ package org.example
 fun main() {
     // Инициализация бака
     val tank = Tank(
-        maxVolume = 4000.0, // 4 м³
-        area = 1.0,      // 1 м²
-        maxHeight = 4.0,         // 4 м
-        startVolume = 1000.0 // Начнем с 1000 литров (1 метр)
+        maxVolume = 4000.0,
+        area = 1.0,
+        maxHeight = 4.0,
+        startVolume = 1000.0
     )
 
     println("--- Tank Simulation Started ---")
@@ -40,8 +40,7 @@ fun main() {
                 "Volume: ${String.format("%.2f", tank.currentVolume)}L | " +
                 "Outflow: ${String.format("%.2f", tank.currentOutflowRate)} L/s")
 
-        // Можно добавить задержку для визуализации, если запускать как приложение
-        // Thread.sleep(100) // Задержка в 100 миллисекунд для замедления симуляции
+        Thread.sleep(100)
     }
 
     println("\n--- Simulation Finished ---")
