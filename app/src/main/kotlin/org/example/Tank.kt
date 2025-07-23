@@ -1,6 +1,6 @@
 package org.example
-
 import kotlin.random.Random
+import java.util.concurrent.atomic.AtomicReference
 
 class Tank(
     val maxVolume: Double,

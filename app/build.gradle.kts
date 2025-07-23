@@ -23,6 +23,7 @@ dependencies {
     // This dependency is used by the application.
     implementation(libs.guava)
     implementation("com.ghgande:jmodbus:1.2")
+    implementation("com.ghgande:j2mod:1.2")
 }
 
 testing {
